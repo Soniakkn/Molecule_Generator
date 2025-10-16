@@ -3,4 +3,3 @@ tensorflow==2.14.0
 numpy==1.26.0
 pandas==2.1.0
 rdkit-pypi==2023.9.5
-sascorer
