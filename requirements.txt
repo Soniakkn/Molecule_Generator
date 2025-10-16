@@ -1,6 +1,6 @@
-streamlit==1.27.0
-tensorflow==2.15.0
-numpy
-pandas
+streamlit==1.30.0
+tensorflow==2.14.0
+numpy==1.26.0
+pandas==2.1.0
 rdkit-pypi==2023.9.5
 sascorer
