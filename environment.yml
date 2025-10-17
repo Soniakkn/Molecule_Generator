@@ -1,0 +1,10 @@
+name: molgen
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - streamlit
+  - tensorflow
+  - numpy
+  - pandas
+  - rdkit
