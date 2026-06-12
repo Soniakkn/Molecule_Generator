@@ -3,13 +3,24 @@ import streamlit as st
 st.title("About")
 
 st.write("""
-This project is a **Molecule Generator** based on deep learning.
+This project is a **Molecule Generator** based on deep learning for the de novo design of novel small molecules.
 
-- It uses an LSTM model trained on SMILES strings.
-- Users can generate novel molecules interactively.
-- Outputs are available in **CSV (SMILES)** and **SDF (3D structure)** formats.
-- You can select either the base model or a fine-tuned model for colchicine inhibitors.
-- The generation temperature can be adjusted for more conservative or diverse molecules.
+### Features
+- Uses an LSTM-based generative model trained on SMILES strings.
+- Generates novel molecules interactively.
+- Supports both a baseline model and a fine-tuned model for colchicine-binding site inhibitors.
+- Adjustable sampling temperature for controlling molecular diversity.
+- Exports generated molecules in **CSV (SMILES)** and **SDF (3D structure)** formats.
+- Enables rapid exploration of chemically relevant and drug-like molecular space.
 
-This tool helps chemists and researchers explore novel chemical space quickly and efficiently.
+### Developed By
+**Sonia Kumari**
+
+### Under the Guidance of
+**Dr. M. Elizabeth Sobhia**
+
+**Department of Pharmacoinformatics**  
+**National Institute of Pharmaceutical Education and Research (NIPER), Mohali**
+
+© 2026 NIPER Mohali
 """)
