@@ -22,5 +22,5 @@ This project is a **Molecule Generator** based on deep learning for the de novo 
 **Department of Pharmacoinformatics**  
 **National Institute of Pharmaceutical Education and Research (NIPER), Mohali**
 
-© 2026 NIPER Mohali
+This platform was developed to facilitate AI-driven molecular design and accelerate the discovery of novel therapeutic candidates.
 """)
