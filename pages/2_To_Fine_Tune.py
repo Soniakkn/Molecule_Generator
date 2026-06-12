@@ -174,7 +174,7 @@ def tokenize_smiles(smiles_list, char2idx, max_len):
    
 model = build_best_lstm_model(vocab_size, max_len)
 model.build(input_shape=(None, max_len))
-model.load_weights("GPU__best_model_MERGED_v2_Again_run2_log_32_batch_0_0005_lr.weights.h5")
+model.load_weights("Final_base_model.weights.h5")
 
 #model.compile(
 #    loss="sparse_categorical_crossentropy",
