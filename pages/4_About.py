@@ -17,7 +17,7 @@ This project is a **Molecule Generator** based on deep learning for the de novo 
 **Sonia Kumari**
 
 ### Under the Guidance of
-**Dr. M. Elizabeth Sobhia**
+**Prof. M. Elizabeth Sobhia**
 
 **Department of Pharmacoinformatics**  
 **National Institute of Pharmaceutical Education and Research (NIPER), Mohali**
