@@ -60,9 +60,9 @@ def load_selected_model(choice):
     model.build(input_shape=(None, max_len))
 
     if choice == "Fine-tuned on Colchicine Inhibitors":
-        weights_path = "GPU__best_model_MERGED_v2_Again_run2_log_32_batch_0_0005_lr_filtered_cbsi_data_AUGUMENTES_20.weights.h5"
+        weights_path = "Final_CBSIs_fine_tuned_model.weights.h5"
     else:
-        weights_path = "GPU__best_model_MERGED_v2_Again_run2_log_32_batch_0_0005_lr.weights.h5"
+        weights_path = "Final_base_model.weights.h5"
 
     model.load_weights(weights_path)
     return model
