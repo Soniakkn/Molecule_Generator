@@ -176,6 +176,17 @@ python All_model_files/generate_molecules.py \
     --device auto
 ```
 
+Generate molecules for colchicine binding site using our fine-tuned model:
+
+```bash
+python All_model_files/generate_molecules.py \
+    --tokenizer tokenizer.pkl \
+    --weights Final_CBSIs_fine_tuned_model.weights.h5 \
+    --num_samples 1000 \
+    --temperature 1.0 \
+    --device auto
+```
+
 Output:
 
 ```text
