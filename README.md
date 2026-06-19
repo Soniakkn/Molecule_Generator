@@ -53,16 +53,11 @@ Input CSV must contain a column named:
 ```text
 smiles
 ```
-Change the directory:
-
-```bash
-cd All_model_files
-```
 
 Run preprocessing:
 
 ```bash
-python prepare_smiles.py \
+python All_model_files/prepare_smiles.py \
     --input dataset.csv
 ```
 
@@ -87,7 +82,7 @@ The preprocessing step:
 Train the LSTM generator:
 
 ```bash
-python train_base_model.py \
+python All_model_files/train_base_model.py \
     --smiles filtered_smiles.csv \
     --tokenizer tokenizer.pkl \
     --device gpu
@@ -117,7 +112,7 @@ cpu     Force CPU execution
 Example:
 
 ```bash
-python train_base_model.py \
+python All_model_files/train_base_model.py \
     --smiles filtered_smiles.csv \
     --tokenizer tokenizer.pkl \
     --epochs 200 \
@@ -138,7 +133,7 @@ Final_base_model.weights.h5
 Fine-tune on a target-specific dataset:
 
 ```bash
-python fine_tune_model.py \
+python All_model_files/fine_tune_model.py \
     --smiles target_dataset.csv \
     --tokenizer tokenizer.pkl \
     --device gpu
@@ -153,7 +148,7 @@ Final_base_model.weights.h5
 To use a custom pretrained model:
 
 ```bash
-python fine_tune_model.py \
+python All_model_files/fine_tune_model.py \
     --smiles target_dataset.csv \
     --tokenizer tokenizer.pkl \
     --base_weights my_model.weights.h5 \
@@ -173,7 +168,7 @@ fine_tuned_model.weights.h5
 Generate molecules using the trained model:
 
 ```bash
-python generate_molecules.py \
+python All_model_files/generate_molecules.py \
     --tokenizer tokenizer.pkl \
     --weights fine_tuned_model.weights.h5 \
     --num_samples 1000 \
@@ -207,7 +202,7 @@ The generation script automatically:
 Calculate molecular descriptors and scaffold information for generated molecules:
 
 ```bash
-python evaluate.py \
+python All_model_files/evaluate.py \
     --input generated_smiles.csv \
     --output evaluated_molecules.csv
 ```
