@@ -123,7 +123,7 @@ python All_model_files/train_base_model.py \
 Output:
 
 ```text
-Final_base_model.weights.h5
+base_model.weights.h5
 ```
 
 ---
@@ -142,16 +142,16 @@ python All_model_files/fine_tune_model.py \
 By default the script uses:
 
 ```text
-Final_base_model.weights.h5
+base_model.weights.h5
 ```
 
-To use a custom pretrained model:
+To use a our pretrained model:
 
 ```bash
 python All_model_files/fine_tune_model.py \
     --smiles target_dataset.csv \
     --tokenizer tokenizer.pkl \
-    --base_weights my_model.weights.h5 \
+    --base_weights Final_base_model.weights.h5 \
     --device gpu
 ```
 
