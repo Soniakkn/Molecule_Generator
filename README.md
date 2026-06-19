@@ -53,6 +53,11 @@ Input CSV must contain a column named:
 ```text
 smiles
 ```
+Change the directory:
+
+```bash
+cd All_model_files
+```
 
 Run preprocessing:
 
